@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .blink {
+    animation: blink 1.2s infinite;
+  }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+body {
+  @apply font-sans antialiased text-[#18212F];
+  background-color: #ffffff;
+}
